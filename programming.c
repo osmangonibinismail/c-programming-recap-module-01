@@ -61,30 +61,52 @@
 //     }
 // }
 
+// #include<stdio.h>
+
+// int main() {
+//     int A, B, C;
+//     char S, Q;
+
+//     scanf("%d %c %d %c %d", &A, &S, &B, &Q, &C);
+
+//     if (S == '+') {
+//         if (A + B == C)
+//             printf("Yes\n");
+//         else
+//             printf("%d\n", A + B);
+//     } else if (S == '-') {
+//         if (A - B == C)
+//             printf("Yes\n");
+//         else
+//             printf("%d\n", A - B);
+//     } else if (S == '*') {
+//         if (A * B == C)
+//             printf("Yes\n");
+//         else
+//             printf("%d\n", A * B);
+//     }
+
+//     return 0;
+// }
+
 #include<stdio.h>
+int main(){
+    long long a, b, k;
+    scanf("%lld %lld %lld", &a, &b, &k);
 
-int main() {
-    int A, B, C;
-    char S, Q;
-
-    scanf("%d %c %d %c %d", &A, &S, &B, &Q, &C);
-
-    if (S == '+') {
-        if (A + B == C)
-            printf("Yes\n");
-        else
-            printf("%d\n", A + B);
-    } else if (S == '-') {
-        if (A - B == C)
-            printf("Yes\n");
-        else
-            printf("%d\n", A - B);
-    } else if (S == '*') {
-        if (A * B == C)
-            printf("Yes\n");
-        else
-            printf("%d\n", A * B);
+    if(a % k == 0 && b % k == 0){
+        printf("Both\n");
+    }
+    else if(a % k == 0){
+        printf("Memo\n");
+    }
+    else if(b % k == 0){
+        printf("Momo\n");
+    }
+    else{
+        printf("No One\n");
     }
 
     return 0;
+    
 }
