@@ -112,40 +112,74 @@
 // }
 
 
+// #include<stdio.h>
+// int main(){
+
+//     int a, b, c;
+//     scanf("%d %d %d", &a,&b,&c);
+
+//     if(a <= b && a <= c){
+//         if(b <= c){
+//             printf("%d\n%d\n%d\n", a, b, c);
+//         }
+//         else{
+//             printf("%d\n%d\n%d\n", a, c, b);
+//         }
+//     }
+//     else if(b <= a && b <= c){
+//         if(a <= c){
+//             printf("%d\n%d\n%d\n", b, a, c);
+//         }
+//         else{
+//             printf("%d\n%d\n%d\n", b, c, a);
+//         }
+//     }
+//     else{
+//         if(a <= b){
+//             printf("%d\n%d\n%d\n", c, a, b);
+//         }
+//         else{
+//             printf("%d\n%d\n%d\n", c, b, a);
+//         }
+//     }
+
+//     printf("\n");
+
+//     printf("%d\n%d\n%d\n", a, b, c);
+
+//     return 0;
+// }
+
 #include<stdio.h>
-int main(){
+int main()
+{
+    int t;
+    scanf("%d", &t);
 
-    int a, b, c;
-    scanf("%d %d %d", &a,&b,&c);
+    for(int cs = 0; cs < t; cs++ ) {
 
-    if(a <= b && a <= c){
-        if(b <= c){
-            printf("%d\n%d\n%d\n", a, b, c);
+        int x, y;
+        scanf("%d %d", &x, &y);
+
+        if(x > y){
+            int temp = x;
+            x = y;
+            y = temp;
         }
-        else{
-            printf("%d\n%d\n%d\n", a, c, b);
+
+        int sum = 0;
+
+        for(int i = x + 1; i < y; i++){
+            //print inside
+
+            if(i % 2 != 0){
+                sum += i;
+            }
         }
+
+        printf("%d\n", sum);
     }
-    else if(b <= a && b <= c){
-        if(a <= c){
-            printf("%d\n%d\n%d\n", b, a, c);
-        }
-        else{
-            printf("%d\n%d\n%d\n", b, c, a);
-        }
-    }
-    else{
-        if(a <= b){
-            printf("%d\n%d\n%d\n", c, a, b);
-        }
-        else{
-            printf("%d\n%d\n%d\n", c, b, a);
-        }
-    }
-
-    printf("\n");
-
-    printf("%d\n%d\n%d\n", a, b, c);
 
     return 0;
+
 }
