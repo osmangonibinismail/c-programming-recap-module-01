@@ -89,24 +89,63 @@
 //     return 0;
 // }
 
+// #include<stdio.h>
+// int main(){
+//     long long a, b, k;
+//     scanf("%lld %lld %lld", &a, &b, &k);
+
+//     if(a % k == 0 && b % k == 0){
+//         printf("Both\n");
+//     }
+//     else if(a % k == 0){
+//         printf("Memo\n");
+//     }
+//     else if(b % k == 0){
+//         printf("Momo\n");
+//     }
+//     else{
+//         printf("No One\n");
+//     }
+
+//     return 0;
+    
+// }
+
+
 #include<stdio.h>
 int main(){
-    long long a, b, k;
-    scanf("%lld %lld %lld", &a, &b, &k);
 
-    if(a % k == 0 && b % k == 0){
-        printf("Both\n");
+    int a, b, c;
+    scanf("%d %d %d", &a,&b,&c);
+
+    if(a <= b && a <= c){
+        if(b <= c){
+            printf("%d\n%d\n%d\n", a, b, c);
+        }
+        else{
+            printf("%d\n%d\n%d\n", a, c, b);
+        }
     }
-    else if(a % k == 0){
-        printf("Memo\n");
-    }
-    else if(b % k == 0){
-        printf("Momo\n");
+    else if(b <= a && b <= c){
+        if(a <= c){
+            printf("%d\n%d\n%d\n", b, a, c);
+        }
+        else{
+            printf("%d\n%d\n%d\n", b, c, a);
+        }
     }
     else{
-        printf("No One\n");
+        if(a <= b){
+            printf("%d\n%d\n%d\n", c, a, b);
+        }
+        else{
+            printf("%d\n%d\n%d\n", c, b, a);
+        }
     }
 
+    printf("\n");
+
+    printf("%d\n%d\n%d\n", a, b, c);
+
     return 0;
-    
 }
