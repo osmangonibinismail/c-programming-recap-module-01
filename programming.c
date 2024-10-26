@@ -150,36 +150,152 @@
 //     return 0;
 // }
 
-#include<stdio.h>
-int main()
-{
-    int t;
-    scanf("%d", &t);
+// #include<stdio.h>
+// int main()
+// {
+//     int t;
+//     scanf("%d", &t);
 
-    for(int cs = 0; cs < t; cs++ ) {
+//     for(int cs = 0; cs < t; cs++ ) {
 
-        int x, y;
-        scanf("%d %d", &x, &y);
+//         int x, y;
+//         scanf("%d %d", &x, &y);
 
-        if(x > y){
-            int temp = x;
-            x = y;
-            y = temp;
-        }
+//         if(x > y){
+//             int temp = x;
+//             x = y;
+//             y = temp;
+//         }
 
-        int sum = 0;
+//         int sum = 0;
 
-        for(int i = x + 1; i < y; i++){
-            //print inside
+//         for(int i = x + 1; i < y; i++){
+//             //print inside
 
-            if(i % 2 != 0){
-                sum += i;
-            }
-        }
+//             if(i % 2 != 0){
+//                 sum += i;
+//             }
+//         }
 
-        printf("%d\n", sum);
-    }
+//         printf("%d\n", sum);
+//     }
 
-    return 0;
+//     return 0;
 
-}
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int n;
+//     scanf("%d", &n);
+
+//     long long sum = (1LL * (n + 1) * n) / 2;
+
+//     printf("%lld\n", sum);
+
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main(){
+//     int t;
+//     scanf("%d", &t);
+
+//     for(int cs = 0; cs < t; cs++){
+//         int n;
+//         scanf("%d", &n);
+
+//         long long fact = 1;
+
+//         for(int i = 1; i <= n; i++ ){
+
+//             fact *= i;
+//         }
+
+//         printf("%lld\n", fact);
+//     }
+
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main(){
+
+//     while(1){
+
+//         int n;
+//         scanf("%d", &n);
+
+//         if(n == 1999){
+//             printf("Correct\n");
+//             break;
+
+//         }else{
+//             printf("Wrong\n");
+//         }
+//     }
+
+//     return 0;
+// }
+// #include<stdio.h>
+// int main(){
+
+//         int n;
+
+//     while(scanf("%d", &n) != EOF){
+
+//         if(n == 1999){
+//             printf("Correct\n");
+//             break;
+
+//         }else{
+//             printf("Wrong\n");
+//         }
+//     }
+
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main(){
+
+//     int n;
+//     scanf("%d", &n);
+
+//     int k = 1;
+//     for(int i = 1; i <= n; i++, k += 2){
+//         int space = n - i;
+
+//         while(space--){
+//             printf(" ");
+//         }
+
+//         for(int j = 1; j <= k; j++){
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+
+//     k -= 2;
+
+//     for(int i = n; i >= 1; i--, k -= 2){
+//         int space = n - i;
+
+//         for(int j = 1; j <= space; j++){
+//             printf(" ");
+//         }
+
+//         // while(space--){
+//         //     printf(" ");
+//         // }
+
+//         for(int j = 1; j <= k; j++){
+//             printf("*");
+//         }
+
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
